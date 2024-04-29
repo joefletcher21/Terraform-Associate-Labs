@@ -1,12 +1,8 @@
-
-
 provider "aws" {
-  # profile = "default"
   region  = "us-east-1"
 }
 
 provider "aws" {
-  # profile = "default"
+  alias = "eu"
   region  = "eu-west-1"
-	alias   = "eu"
 }

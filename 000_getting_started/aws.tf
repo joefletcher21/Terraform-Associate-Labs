@@ -1,5 +1,5 @@
 resource "aws_instance" "my_server" {
-  ami           = "ami-087c17d1fe0178315"
+  ami           = "ami-04e5276ebb8451442"
   instance_type = var.instance_type
 
   tags = {
@@ -7,13 +7,11 @@ resource "aws_instance" "my_server" {
   }
 }
 
-/*
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
   providers = {
     aws = aws.eu
-  }
-
+  } 
   name = "my-vpc"
   cidr = "10.0.0.0/16"
 
@@ -29,4 +27,3 @@ module "vpc" {
     Environment = "dev"
   }
 }
-*/
